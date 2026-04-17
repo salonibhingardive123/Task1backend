@@ -84,6 +84,12 @@ app.post("/reviews", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.status(200).send("API is running");
+});
+
+
+
 // GET /reviews
 app.get("/reviews", async (req, res) => {
   try {
